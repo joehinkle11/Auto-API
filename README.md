@@ -65,6 +65,12 @@ Every resource must provide error correction conforming to the standardization b
 
 ### 4) Confident vs. Blind Usage
 
+Every resource must support two modes of request.
+
+| Confident | Blind |
+|---|---|
+|`Usage-Mode: mode="confident"; sha256="HASH";`||
+
 TODO. It should be possible to hash the response to a `HELP` and pass that hash in a header when doing `GET`s, `POST`s, etc to do ensure there was not a breaking change on the server side before executing.
 
 <sup>1</sup>[GitHub](https://developer.github.com/v3/#authentication) does this very thing in multiple parts of their API to protect the existence of private user resources.
