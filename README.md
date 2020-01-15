@@ -1,5 +1,9 @@
 # Auto API
 
+I'm archiving this project. It was a fun idea, but the state of REST and HATEOAS is just so broken and hopeless that trying to actually build a standard on top of it seems futile. Also, the benefits of a truely RESTful API seem oversold, and REST-like (or RPC-style) APIs are essentially the de facto way of doing "REST" today. Unless there was a single source for defining how to do REST (like GraphQL has), this project seems impossible and the benefits negligible.
+
+## Summary
+
 This is an experimental project to make an API standard allowing for a client to determine the contract of any RESTful API resource without need to communicate directly with the API team. Beyond making a standard, I would also like to make a simple JavaScript node package to implement and enforce the standard.
 
 ## Purpose
